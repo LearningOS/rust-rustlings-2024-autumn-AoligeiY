@@ -14,13 +14,15 @@
 // No hints this time ;)
 
 
-// Put your function here!
-fn calculate_price_of_apples(number: i32) -> i32 {
 
-    if number > 40 {
-        number
+// Put your function here!
+const LESS_THAN_40: u32 = 2;
+const MORE_THAN_40: u32 = 1;
+fn calculate_price_of_apples(num: u32) -> u32 {
+    if num > 40 {
+        num * MORE_THAN_40
     } else {
-        number * 2
+        num * LESS_THAN_40
     }
 }
 
